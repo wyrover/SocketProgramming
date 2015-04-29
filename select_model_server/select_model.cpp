@@ -51,7 +51,7 @@ int main(int argc, char* argv[]){
 
 			for(int i = 0; i < (int)fdSocket.fd_count;i++){
 				//check the param 1 if exists in the set of param 2
-				if(FD_ISSET(fdSocket.fd_array[i],&fdRead)){
+				if(FD_ISSET(fdSocket.fd_array[i],&fdRead)){ //not exists
 
 					if(fdSocket.fd_array[i] == s_listen){
 
